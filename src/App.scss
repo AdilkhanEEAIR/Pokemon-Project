@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app-header{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.app-content{
+    padding: 20px;
+}
+.pokemon-card {
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    img {
+        height: 150px;
+        object-fit: contain;
+    }
+    .ant-card-body {
+        padding: 10px;
+    }
+}
