@@ -19,7 +19,7 @@ const PokemonList = () => {
                 {loading && <Spin />}
                 {hasMore && (
                 <div style={{ textAlign: 'center', marginTop: 20 }}>
-                    <Button onClick={() => setPage((prev) => prev + 1)}>Загрузить ещё</Button>
+                    <Button onClick={() => setPage((prev) => prev + 1)}>Load More</Button>
                 </div>
             )}
         </>

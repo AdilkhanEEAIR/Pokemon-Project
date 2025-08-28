@@ -8,7 +8,7 @@ const CollectionModal = () => {
 
     return (
         <>
-            <Button onClick={() => setOpen(true)} style={{ margin: '20px 0' }}>Мои покемоны</Button>
+            <Button onClick={() => setOpen(true)} style={{ margin: '20px 0' }}>My Pokemons</Button>
             <Modal open={open} onCancel={() => setOpen(false)} footer={null} title="Пойманные покемоны">
                 <List
                   dataSource={collection}

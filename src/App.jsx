@@ -11,10 +11,10 @@ const App = () => {
       <Header className="app-header">POKEMONS</Header>
       <Content className="app-content">
         <Tabs defaultActiveKey="1">
-          <Tabs.TabPane tab="Покемоны" key="1">
+          <Tabs.TabPane tab="Pokemons" key="1">
             <PokemonList />
           </Tabs.TabPane>
-          <Tabs.TabPane tab="Боевая Арена" key="2">
+          <Tabs.TabPane tab="Battle Arena" key="2">
             <Arena />
           </Tabs.TabPane>
         </Tabs>

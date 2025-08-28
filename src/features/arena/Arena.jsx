@@ -16,21 +16,21 @@ const Arena = () => {
         <div>
               <Select
                   style={{ width: 200, marginRight: 16 }}
-                  placeholder="Первый покемон"
+                  placeholder="First Pokemon"
                   onChange={(id) => setP1(collection.find((p) => p.id === id))}
                   options={collection.map((p) => ({ value: p.id, label: p.name }))}
             />
 
                 <Select
                   style={{ width: 200 }}
-                  placeholder="Второй покемон"
+                  placeholder="Second Pokemon"
                   onChange={(id) => setP2(collection.find((p) => p.id === id))}
                   options={collection.map((p) => ({ value: p.id, label: p.name }))}
                 />
 
             {p1 && p2 && (
-              <Card title="Результат" style={{ marginTop: 20 }}>
-                Победил: <b>{winner.name.charAt(0).toUpperCase() + winner.name.slice(1)}</b>
+              <Card title="Result" style={{ marginTop: 20 }}>
+                Winner: <b>{winner.name.charAt(0).toUpperCase() + winner.name.slice(1)}</b>
               </Card>
             )}
         </div>

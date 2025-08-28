@@ -11,7 +11,7 @@ const PokemonCard = ({pokemon}) => {
             cover={<img alt={pokemon.name} 
             src={pokemon.sprites.front_default} />}
             actions={[
-                <Button type="primary" onClick={() => catchPokemon(pokemon)}>Поймать покемона</Button>,
+                <Button type="primary" onClick={() => catchPokemon(pokemon)}>Catch pokemon</Button>,
             ]}
         />
     )
